@@ -33,15 +33,15 @@ public class CommandHandler {
 	     commandsMap.put("help", new HelpCommand());
 	}
 	
-	public void executeCommand(String input) {
+	public void execute(String input) {
         //HistoryManager.save(input);
-        //String[] parts = input.split(" ", 2);
-        //Command command = commandsMap.get(parts[0]);
+        String[] parts = input.split(" ", 2);
+        Command command = commandsMap.get(parts[0]);
 
-        //if (command != null) {
-            //command.execute(parts.length > 1 ? parts[1] : "");
-        //} else {
+        if (command != null) {
+            command.execute(parts.length > 1 ? parts[1] : "");
+        } else {
             System.out.println("Comando não reconhecido.");
-        //}
+        }
     }
 }
