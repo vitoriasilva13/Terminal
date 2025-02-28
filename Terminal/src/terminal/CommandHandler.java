@@ -34,12 +34,13 @@ public class CommandHandler {
 	}
 	
 	public void execute(String input) {
-        //HistoryManager.save(input);
-        String[] parts = input.split(" ", 2);
+        HistoryManager.save(input);
+        String[] parts = input.split(" ", 2); //@TODO checar depois por conta dos comandos com mais de um parâmetro
         Command command = commandsMap.get(parts[0]);
 
         if (command != null) {
             command.execute(parts.length > 1 ? parts[1] : "");
+            System.out.println();
         } else {
             System.out.println("Comando não reconhecido.");
         }

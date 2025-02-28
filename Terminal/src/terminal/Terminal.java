@@ -17,7 +17,5 @@ public class Terminal {
         }
 		scanner.close();
         System.out.println("Terminal encerrado.");
-
 	}
-
 }
