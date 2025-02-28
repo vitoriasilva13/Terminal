@@ -1,11 +1,12 @@
 package terminal.commands;
 
+import java.nio.file.Paths;
+
 public class PwdCommand implements Command {
 
 	@Override
 	public void execute(Object object) {
-		// TODO Auto-generated method stub
-		
+		System.out.println(Paths.get("").toAbsolutePath());
 	}
 
 }
