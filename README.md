@@ -1,4 +1,4 @@
-Informativo
+<code>Informativo
 
 Terminal/
 │── src/terminal
@@ -20,3 +20,4 @@ Terminal/
 │   │   ├── FileManager.java
 │   │   ├── DirectoryManager.java
 │   │   ├── HistoryManager.java✅
+</code>
