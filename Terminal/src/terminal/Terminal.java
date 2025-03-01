@@ -5,17 +5,17 @@ import java.util.Scanner;
 public class Terminal {
 
 	public static void main(String[] args) {
-		Scanner scanner = new Scanner(System.in);
+		SystemInfo sysInfo = new SystemInfo();
 		CommandHandler commandHandler = new CommandHandler();
 		
-		System.out.println("Terminal Iniciado...");
+		Scanner scanner = new Scanner(System.in);
+		
 		while (true) {
-            System.out.print("> ");
+            System.out.print(sysInfo.getUserName() + "@" + sysInfo.getPcName() +":~$ ");
             String input = scanner.nextLine().trim();
-            if (input.equals("exit")) break;
-            commandHandler.execute(input);
+            if (!commandHandler.execute(input)) break;
         }
+		
 		scanner.close();
-        System.out.println("Terminal encerrado.");
 	}
 }

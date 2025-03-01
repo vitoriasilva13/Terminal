@@ -1,5 +1,5 @@
 package terminal.commands;
 
 public interface Command {
-	void execute(Object object);
+	boolean execute(Object object);
 }

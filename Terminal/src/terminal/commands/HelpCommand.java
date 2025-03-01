@@ -3,7 +3,7 @@ package terminal.commands;
 public class HelpCommand implements Command {
 
 	@Override
-	public void execute(Object object) {
+	public boolean execute(Object object) {
 		System.out.println("Comandos disponíveis:");
         System.out.println("pwd                    - Exibe o diretório atual.");
         System.out.println("ls                     - Lista arquivos e diretórios do diretório atual.");
@@ -16,5 +16,6 @@ public class HelpCommand implements Command {
         System.out.println("history                - Mostra o histórico de comandos digitados.");
         System.out.println("help                   - Exibe esta mensagem de ajuda.");
         System.out.println("exit                   - Encerra o terminal.");
+        return true;
 	}
 }

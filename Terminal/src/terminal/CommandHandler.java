@@ -7,6 +7,7 @@ import terminal.commands.CatCommand;
 import terminal.commands.CdCommand;
 import terminal.commands.Command;
 import terminal.commands.EchoCommand;
+import terminal.commands.ExitCommand;
 import terminal.commands.HelpCommand;
 import terminal.commands.HistoryCommand;
 import terminal.commands.LsCommand;
@@ -31,18 +32,19 @@ public class CommandHandler {
 	     commandsMap.put("echo", new EchoCommand());
 	     commandsMap.put("history", new HistoryCommand());
 	     commandsMap.put("help", new HelpCommand());
+	     commandsMap.put("exit", new ExitCommand());
 	}
 	
-	public void execute(String input) {
+	public boolean execute(String input) {
         HistoryManager.save(input);
         String[] parts = input.split(" ", 2); //@TODO checar depois por conta dos comandos com mais de um parâmetro
         Command command = commandsMap.get(parts[0]);
 
         if (command != null) {
-            command.execute(parts.length > 1 ? parts[1] : "");
-            System.out.println();
+            return command.execute(parts.length > 1 ? parts[1] : "");
         } else {
             System.out.println("Comando não reconhecido.");
+            return true;
         }
     }
 }
