@@ -4,6 +4,7 @@ Informativo
 Terminal/
 │── src/terminal
 │   ├── Terminal.java✅
+│   ├── SystemInfo.java✅ //para personalizar o terminal com as informações do sistema
 │   ├── CommandHandler.java //Revisar conforme comandos forem feitos
 │   ├── commands/
 │   │   ├── Command.java✅
