@@ -3,7 +3,7 @@ package terminal.commands;
 public class HelpCommand implements Command {
 
 	@Override
-	public boolean execute(Object object) {
+	public boolean execute(String args) {
 		System.out.println("Comandos disponíveis:");
         System.out.println("pwd                    - Exibe o diretório atual.");
         System.out.println("ls                     - Lista arquivos e diretórios do diretório atual.");
