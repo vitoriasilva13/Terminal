@@ -1,13 +1,18 @@
 package terminal.commands;
 
-import java.nio.file.Paths;
+import terminal.managers.DirectoryManager;
 
 public class PwdCommand implements Command {
+	
+	private DirectoryManager dir;
 
-	@Override
-	public boolean execute(Object object) {
-		System.out.println(Paths.get("").toAbsolutePath());
-		return true;
+	public PwdCommand(DirectoryManager dir) {
+		this.dir = dir;
 	}
 
+	@Override
+	public boolean execute(String args) {
+		System.out.println(dir.getCurrentDirectory());
+		return true;
+	}
 }
