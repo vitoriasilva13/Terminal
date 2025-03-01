@@ -7,9 +7,9 @@ Terminal/
 │   ├── CommandHandler.java //Revisar conforme comandos forem feitos
 │   ├── commands/
 │   │   ├── Command.java✅
-│   │   ├── PwdCommand.java
+│   │   ├── PwdCommand.java✅
 │   │   ├── LsCommand.java
-│   │   ├── CdCommand.java
+│   │   ├── CdCommand.java✅
 │   │   ├── MkdirCommand.java
 │   │   ├── TouchCommand.java
 │   │   ├── RmCommand.java
@@ -19,6 +19,6 @@ Terminal/
 │   │   ├── HelpCommand.java✅
 │   ├── managers/
 │   │   ├── FileManager.java
-│   │   ├── DirectoryManager.java
+│   │   ├── DirectoryManager.java //adicionar metodos conforme necessário
 │   │   ├── HistoryManager.java✅
 ```
