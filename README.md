@@ -18,6 +18,7 @@ Terminal/
 │   │   ├── EchoCommand.java
 │   │   ├── HistoryCommand.java✅
 │   │   ├── HelpCommand.java✅
+│   │   ├── ExitCommand.java✅
 │   ├── managers/
 │   │   ├── FileManager.java
 │   │   ├── DirectoryManager.java //adicionar metodos conforme necessário
