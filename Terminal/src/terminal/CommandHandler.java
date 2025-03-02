@@ -28,7 +28,7 @@ public class CommandHandler {
 		commandsMap = new HashMap<>();
 		
 		commandsMap.put("pwd", new PwdCommand(dir));
-		commandsMap.put("ls", new LsCommand());
+		commandsMap.put("ls", new LsCommand(dir));
 		commandsMap.put("cd", new CdCommand(dir));
 		commandsMap.put("mkdir", new MkdirCommand());
 		commandsMap.put("touch", new TouchCommand());
