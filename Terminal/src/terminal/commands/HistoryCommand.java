@@ -6,7 +6,11 @@ public class HistoryCommand implements Command {
 
 	@Override
 	public boolean execute(String args) {
-		HistoryManager.show();
+		if (args.equals("clear")) {
+			HistoryManager.clearHistory();
+		} else {
+			HistoryManager.show();
+		}
 		return true;
 	}
 }

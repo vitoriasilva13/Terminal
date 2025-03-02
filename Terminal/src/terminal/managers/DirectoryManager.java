@@ -42,4 +42,21 @@ public class DirectoryManager {
             System.out.println("Diretório não encontrado: " + path);
         }
     }
+	
+	public void showDirectories() {
+		File dir = new File(currentDirectory.getPath());
+		File[] files = dir.listFiles();
+		
+		if (files != null) {
+			System.out.println("Total " + files.length);
+			for (File file : files) {
+				if (file.isDirectory()) {
+					System.out.println("<DIR>  " +  file.getName());
+				} else {
+					System.out.println("       " + file.getName());
+				}
+			}
+		}
+		
+	}
 }
