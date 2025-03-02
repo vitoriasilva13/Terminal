@@ -9,7 +9,7 @@ Terminal/
 │   ├── commands/
 │   │   ├── Command.java✅
 │   │   ├── PwdCommand.java✅
-│   │   ├── LsCommand.java
+│   │   ├── LsCommand.java✅
 │   │   ├── CdCommand.java✅
 │   │   ├── MkdirCommand.java
 │   │   ├── TouchCommand.java
