@@ -3,7 +3,7 @@ package terminal.managers;
 import java.io.FileWriter;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.util.ArrayList;
+import java.util.List;
 
 public class HistoryManager {
 
@@ -17,7 +17,7 @@ public class HistoryManager {
 	
 	public static void show() {
         try {
-            ArrayList<String> lines = (ArrayList<String>) Files.readAllLines(Paths.get("history.txt"));
+            List<String> lines = Files.readAllLines(Paths.get("history.txt"));
             for (String line : lines) {
                 System.out.println(line);
             }

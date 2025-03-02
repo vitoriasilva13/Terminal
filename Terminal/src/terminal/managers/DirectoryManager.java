@@ -13,7 +13,7 @@ public class DirectoryManager {
 	
 	public void setCurrentDirectory(File currentDirectory) {
 		this.currentDirectory = currentDirectory;
-		this.currentDirectorySimplified = "~/" + currentDirectory.getName();
+		currentDirectorySimplified = "~/" + currentDirectory.getName();
 	}
 	
 	public File getCurrentDirectory() {
@@ -24,14 +24,13 @@ public class DirectoryManager {
 		return currentDirectorySimplified;
 	}
 	
-	public boolean changeDirectory(String path) {
+	public void changeDirectory(String path) {
         File newDir;
 
         if (path.equals("..")) {
             newDir = currentDirectory.getParentFile();
             if (newDir == null) {
                 System.out.println("Diretório raíz.");
-                return false;
             }
         } else {
             newDir = new File(currentDirectory, path);
@@ -39,10 +38,8 @@ public class DirectoryManager {
 
         if (newDir.exists() && newDir.isDirectory()) {
             setCurrentDirectory(newDir);;
-            return true;
         } else {
             System.out.println("Diretório não encontrado: " + path);
-            return false;
         }
     }
 }
