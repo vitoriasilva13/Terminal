@@ -11,9 +11,9 @@ Terminal/
 │   │   ├── PwdCommand.java✅
 │   │   ├── LsCommand.java✅
 │   │   ├── CdCommand.java✅
-│   │   ├── MkdirCommand.java
-│   │   ├── TouchCommand.java
-│   │   ├── RmCommand.java
+│   │   ├── MkdirCommand.java✅
+│   │   ├── TouchCommand.java✅
+│   │   ├── RmCommand.java✅
 │   │   ├── CatCommand.java
 │   │   ├── EchoCommand.java
 │   │   ├── HistoryCommand.java✅
