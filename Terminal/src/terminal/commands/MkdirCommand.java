@@ -17,8 +17,8 @@ public class MkdirCommand implements Command {
 		try {
 			File file = new File(this.dir.getCurrentDirectory(),args);
 			
-			if(file.mkdir()) {
-				System.out.println("Diretório criado: " + file.getName());
+			if(file.mkdirs()) {
+				System.out.println("Diretório criado: " + args);
 			}else {
 				System.out.println("O diretório já existe.");
 			}
