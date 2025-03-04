@@ -30,7 +30,7 @@ public class CommandHandler {
 		commandsMap.put("pwd", new PwdCommand(dir));
 		commandsMap.put("ls", new LsCommand(dir));
 		commandsMap.put("cd", new CdCommand(dir));
-		commandsMap.put("mkdir", new MkdirCommand());
+		commandsMap.put("mkdir", new MkdirCommand(dir));
 		commandsMap.put("touch", new TouchCommand(dir));
 		commandsMap.put("rm", new RmCommand());
 		commandsMap.put("cat", new CatCommand());
