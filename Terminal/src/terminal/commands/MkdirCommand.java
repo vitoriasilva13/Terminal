@@ -23,8 +23,7 @@ public class MkdirCommand implements Command {
 				System.out.println("O diretório já existe.");
 			}
 		}catch (SecurityException e) {
-            System.out.println("Ocorreu um erro.");
-            e.printStackTrace();
+            System.out.println("Ocorreu um erro de permissão.");
         }
 		return true;
 	}
