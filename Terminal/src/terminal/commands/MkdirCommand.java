@@ -15,7 +15,7 @@ public class MkdirCommand implements Command {
 	@Override
 	public boolean execute(String args) {
 		try {
-			File file = new File(this.dir.getCurrentDirectory(),args);
+			File file = new File(dir.getCurrentDirectory().getAbsolutePath(), args);
 			
 			if(file.mkdirs()) {
 				System.out.println("Diretório criado: " + args);
