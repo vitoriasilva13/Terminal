@@ -31,6 +31,7 @@ public class DirectoryManager {
             newDir = currentDirectory.getParentFile();
             if (newDir == null) {
                 System.out.println("Diretório raíz.");
+                return;
             }
         } else {
             newDir = new File(currentDirectory, path);
