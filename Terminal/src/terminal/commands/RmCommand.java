@@ -17,9 +17,9 @@ public class RmCommand implements Command {
 		try {
 			if(file.isFile()) {
 				file.delete();
-			}if(file.isDirectory() && file.list().length == 0) {
+			}else if(file.isDirectory() && file.list().length == 0) {
 				file.delete();
-			}else {
+			}else{
 				for(String childPath : file.list()) {
 					File childFile = new File(file.getAbsolutePath(), childPath);
 					this.delete(childFile);

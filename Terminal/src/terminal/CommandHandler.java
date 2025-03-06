@@ -33,7 +33,7 @@ public class CommandHandler {
 		commandsMap.put("mkdir", new MkdirCommand(dir));
 		commandsMap.put("touch", new TouchCommand(dir));
 		commandsMap.put("rm", new RmCommand(dir));
-		commandsMap.put("cat", new CatCommand());
+		commandsMap.put("cat", new CatCommand(dir));
 		commandsMap.put("echo", new EchoCommand());
 		commandsMap.put("history", new HistoryCommand());
 		commandsMap.put("help", new HelpCommand());
