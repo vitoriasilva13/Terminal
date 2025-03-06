@@ -14,13 +14,13 @@ Terminal/
 │   │   ├── MkdirCommand.java✅
 │   │   ├── TouchCommand.java✅
 │   │   ├── RmCommand.java✅
-│   │   ├── CatCommand.java
+│   │   ├── CatCommand.java✅
 │   │   ├── EchoCommand.java
 │   │   ├── HistoryCommand.java✅
 │   │   ├── HelpCommand.java✅
 │   │   ├── ExitCommand.java✅
 │   ├── managers/
-│   │   ├── FileManager.java
+│   │   ├── FileManager.java //falta echo
 │   │   ├── DirectoryManager.java //adicionar metodos conforme necessário
 │   │   ├── HistoryManager.java✅
 ```
