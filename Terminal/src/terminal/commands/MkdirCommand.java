@@ -1,30 +1,18 @@
 package terminal.commands;
 
-import java.io.File;
-
-import terminal.managers.DirectoryManager;
+import terminal.managers.FileManager;
 
 public class MkdirCommand implements Command {
 	
-	private DirectoryManager dir;
+	private FileManager fil;
 	
-	public MkdirCommand(DirectoryManager dir) {
-		this.dir = dir;
+	public MkdirCommand(FileManager fil) {
+		this.fil = fil;
 	}
 	
 	@Override
 	public boolean execute(String args) {
-		try {
-			File file = new File(dir.getCurrentDirectory().getAbsolutePath(), args);
-			
-			if(file.mkdirs()) {
-				System.out.println("Diretório criado: " + args);
-			}else {
-				System.out.println("O diretório já existe.");
-			}
-		}catch (SecurityException e) {
-            System.out.println("Ocorreu um erro de permissão.");
-        }
+		fil.createNewDirectory(args);
 		return true;
 	}
 	

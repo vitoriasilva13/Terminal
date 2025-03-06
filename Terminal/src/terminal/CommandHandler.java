@@ -16,24 +16,27 @@ import terminal.commands.PwdCommand;
 import terminal.commands.RmCommand;
 import terminal.commands.TouchCommand;
 import terminal.managers.DirectoryManager;
+import terminal.managers.FileManager;
 import terminal.managers.HistoryManager;
 
 public class CommandHandler {
 	
 	private Map<String, Command> commandsMap;
 	private DirectoryManager dir;
+	private FileManager fil;
 	
 	public CommandHandler() {
 		dir = new DirectoryManager();
+		fil = new FileManager(dir);
 		commandsMap = new HashMap<>();
 		
 		commandsMap.put("pwd", new PwdCommand(dir));
 		commandsMap.put("ls", new LsCommand(dir));
 		commandsMap.put("cd", new CdCommand(dir));
-		commandsMap.put("mkdir", new MkdirCommand(dir));
-		commandsMap.put("touch", new TouchCommand(dir));
-		commandsMap.put("rm", new RmCommand(dir));
-		commandsMap.put("cat", new CatCommand(dir));
+		commandsMap.put("mkdir", new MkdirCommand(fil));
+		commandsMap.put("touch", new TouchCommand(fil));
+		commandsMap.put("rm", new RmCommand(fil));
+		commandsMap.put("cat", new CatCommand(fil));
 		commandsMap.put("echo", new EchoCommand());
 		commandsMap.put("history", new HistoryCommand());
 		commandsMap.put("help", new HelpCommand());

@@ -1,32 +1,17 @@
 package terminal.commands;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.util.Scanner;
-
-import terminal.managers.DirectoryManager;
+import terminal.managers.FileManager;
 
 public class CatCommand implements Command {
 	
-	private DirectoryManager dir;
+	private FileManager fil;
 	
-	public CatCommand(DirectoryManager dir) {
-		this.dir = dir;
+	public CatCommand(FileManager fil) {
+		this.fil = fil;
 	}
 	@Override
 	public boolean execute(String args) {
-		File file = new File(this.dir.getCurrentDirectory(), args);
-		
-		try (Scanner scanner = new Scanner(file)){
-			while(scanner.hasNextLine()){
-				System.out.println(scanner.nextLine());
-			}
-			/*
-			 * nesse while estamos lendo sempre a proxima linha, se ela existir, printa a mesma
-			 */
-		}catch(FileNotFoundException e) {
-			System.out.println("Arquivo não encontrado: " + file.getName());
-		}
+		fil.printFileContent(args);
 		return true;
 	}
 

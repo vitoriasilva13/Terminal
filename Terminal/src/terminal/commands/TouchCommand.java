@@ -1,35 +1,18 @@
 package terminal.commands;
 
-import java.io.File;
-import java.io.IOException;
-
-import terminal.managers.DirectoryManager;
+import terminal.managers.FileManager;
 
 public class TouchCommand implements Command {
 
-	private DirectoryManager dir;
+	private FileManager fil;
 	
-	public TouchCommand(DirectoryManager dir) {
-		this.dir = dir;
+	public TouchCommand(FileManager fil) {
+		this.fil = fil;
 	}
 	
 	@Override
 	public boolean execute(String args) {
-		try {
-            File file = new File(this.dir.getCurrentDirectory(), args);
-
-            if (file.createNewFile()) {
-                System.out.println("Arquivo criado: " + file.getName());
-            } else {
-                System.out.println("O arquivo já existe.");
-            }
-        } catch (IOException e) {
-            System.out.println("Ocorreu um erro.");
-            e.printStackTrace();
-        }
-		/*
-         * no catch usamos IOException para capturar toda e qualquer execessão ou erro referente a input e/ou output
-         */
+		fil.createNewFile(args);
 		return true;
 	}
 
