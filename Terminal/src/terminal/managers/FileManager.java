@@ -2,6 +2,7 @@ package terminal.managers;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
 
@@ -103,4 +104,30 @@ public class FileManager {
 	/*
 	 * nesse while estamos lendo sempre a proxima linha, se ela existir, printa a mesma
 	 */
+	
+	 public void echoToFile(String args) {
+		 	
+        int index = args.lastIndexOf(">");
+        if (index == -1 || index == args.length() - 1) {
+            System.out.println("Erro no comando. Certifique-se de usar: echo <texto> > <arquivo>");
+            return;
+        }
+        /*
+         * identifica quando o > é usado pela última vez, para casos que o texto a ser inserido no arquivo contenha >
+         */
+
+        String text = args.substring(0, index).trim();
+        String fileName = args.substring(index + 1).trim();
+        /*
+         * separa o texto do nome do arquivo
+         */
+        File file = new File(this.dir.getCurrentDirectory(), fileName);
+        
+        try (FileWriter writer = new FileWriter(file.getAbsoluteFile(), true)) {
+            writer.write(text);
+            System.out.println("Texto escrito no arquivo " + fileName);
+        } catch (IOException e) {
+            System.out.println("Erro ao escrever no arquivo!");
+        }
+	 }
 }

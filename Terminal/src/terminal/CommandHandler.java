@@ -37,7 +37,7 @@ public class CommandHandler {
 		commandsMap.put("touch", new TouchCommand(fil));
 		commandsMap.put("rm", new RmCommand(fil));
 		commandsMap.put("cat", new CatCommand(fil));
-		commandsMap.put("echo", new EchoCommand());
+		commandsMap.put("echo", new EchoCommand(fil));
 		commandsMap.put("history", new HistoryCommand());
 		commandsMap.put("help", new HelpCommand());
 		commandsMap.put("exit", new ExitCommand());
