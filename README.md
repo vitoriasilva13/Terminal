@@ -5,7 +5,7 @@ Terminal/
 │── src/terminal
 │   ├── Terminal.java✅
 │   ├── SystemInfo.java✅ //para personalizar o terminal com as informações do sistema
-│   ├── CommandHandler.java //Revisar conforme comandos forem feitos
+│   ├── CommandHandler.java✅
 │   ├── commands/
 │   │   ├── Command.java✅
 │   │   ├── PwdCommand.java✅
@@ -15,12 +15,12 @@ Terminal/
 │   │   ├── TouchCommand.java✅
 │   │   ├── RmCommand.java✅
 │   │   ├── CatCommand.java✅
-│   │   ├── EchoCommand.java
+│   │   ├── EchoCommand.java✅
 │   │   ├── HistoryCommand.java✅
 │   │   ├── HelpCommand.java✅
 │   │   ├── ExitCommand.java✅
 │   ├── managers/
-│   │   ├── FileManager.java //falta echo
-│   │   ├── DirectoryManager.java //adicionar metodos conforme necessário
+│   │   ├── FileManager.java✅
+│   │   ├── DirectoryManager.java✅
 │   │   ├── HistoryManager.java✅
 ```
