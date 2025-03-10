@@ -4,17 +4,28 @@
 Este projeto é um **terminal de linha de comando** simulado, desenvolvido em **Java**, que suporta comandos semelhantes aos de um terminal Linux. Ele permite navegar entre diretórios, criar arquivos e diretórios, manipular arquivos e manter um histórico de comandos.
 
 ## 📂 Funcionalidades
-✅ **pwd** - Exibe o diretório atual  
-✅ **ls** - Lista arquivos e diretórios  
-✅ **cd \<diretório\>** - Navega para outro diretório  
-✅ **mkdir \<nome\>** - Cria um novo diretório  
-✅ **touch \<arquivo\>** - Cria um novo arquivo vazio  
-✅ **rm \<arquivo/diretório\>** - Remove um arquivo ou diretório  
-✅ **cat \<arquivo\>** - Exibe o conteúdo de um arquivo  
-✅ **echo \<texto\> > \<arquivo\>** - Escreve texto em um arquivo  
-✅ **history** - Mostra o histórico de comandos  
-✅ **history clear** - Limpa o histórico de comandos  
-✅ **exit** - Encerra o terminal  
+- **Navegação entre diretórios** (`cd`, `pwd`, `ls`)
+- **Manipulação de arquivos e diretórios** (`mkdir`, `touch`, `rm`, `cat`, `echo`)
+- **Histórico de comandos** (`history`)
+- **Ajuda com lista de comandos** (`help`)
+- **Encerramento do terminal** (`exit`)
+
+## 📖 Uso dos Comandos
+| Comando                 | Descrição |
+|-------------------------|-------------|
+| `pwd`                  | Exibe o diretório atual |
+| `ls`                   | Lista os arquivos do diretório atual |
+| `cd <diretório>`       | Acessa um diretório |
+| `cd ..`                | Volta um nível no diretório |
+| `mkdir <nome>`         | Cria um novo diretório |
+| `touch <arquivo>`      | Cria um arquivo vazio |
+| `rm <arquivo/diretório>` | Remove um arquivo ou diretório |
+| `cat <arquivo>`        | Exibe o conteúdo de um arquivo |
+| `echo <texto> > <arquivo>` | Escreve texto em um arquivo |
+| `history`              | Exibe o histórico de comandos |
+| `history clear`         | Limpa o histórico de comandos |
+| `help`                 | Mostra a lista de comandos disponíveis |
+| `exit`                 | Encerra o terminal |
 
 ## 🏗 Estrutura do Projeto
 ```
