@@ -2,19 +2,19 @@
 
 Este projeto é um simulador de terminal Linux, desenvolvido em Java, que permite a execução de comandos básicos como `pwd`, `ls`, `cd`, `mkdir`, `touch`, `rm`, `cat`, `echo`, `history`, `help` e `exit`.
 
-## 👨‍💻 Desenvolvedores
+## Desenvolvedores
 
 - [:octocat: Ana Luiza](https://github.com/nalusantana)
 - [:octocat: Vitória Silva](https://github.com/vitoriasilva13)
 
-## 🚀 Instruções de Uso
+## Instruções de Uso
 
 1. Execute o programa pelo arquivo principal `Terminal.java`.
 2. Escreva um dos comandos que estejam na lista na seção abaixo (Comandos) no terminal e pressione Enter.
 3. Repita o passo 2 o quanto desejar.
 4. Para sair do terminal, use o comando `exit`.
 
-## 📖 Comandos
+## Comandos
 | Comando                 | Descrição |
 |-------------------------|-------------|
 | `pwd`                  | Exibe o diretório atual |
@@ -31,7 +31,7 @@ Este projeto é um simulador de terminal Linux, desenvolvido em Java, que permit
 | `help`                 | Mostra a lista de comandos disponíveis |
 | `exit`                 | Encerra o terminal |
 
-## 📝 Exemplos de Uso
+## Exemplos de Uso
 
 ### Criando e navegando entre diretórios
 ```sh
