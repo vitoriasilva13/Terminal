@@ -2,6 +2,11 @@
 
 Este projeto é um simulador de terminal Linux, desenvolvido em Java, que permite a execução de comandos básicos como `pwd`, `ls`, `cd`, `mkdir`, `touch`, `rm`, `cat`, `echo`, `history`, `help` e `exit`.
 
+## 👨‍💻 Desenvolvedores
+
+- [:octocat: Ana Luiza](https://github.com/nalusantana)
+- [:octocat: Vitória Silva](https://github.com/vitoriasilva13)
+
 ## 🚀 Como Executar
 
 1. Execute o programa pelo arquivo principal `Terminal.java`.
@@ -62,7 +67,3 @@ u@p:~/diretorioatual$ history clear
 ```sh
 u@p:~/diretorioatual$ exit
 ```
-
-👨‍💻 Desenvolvedores
-- [Ana Luiza](https://github.com/nalusantana)
-- [Vitória Silva](https://github.com/vitoriasilva13)
