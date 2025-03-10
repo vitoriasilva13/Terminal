@@ -4,15 +4,15 @@ import terminal.managers.DirectoryManager;
 
 public class PwdCommand implements Command {
 	
-	private DirectoryManager dir;
+	private DirectoryManager directoryManager;
 
-	public PwdCommand(DirectoryManager dir) {
-		this.dir = dir;
+	public PwdCommand(DirectoryManager directoryManager) {
+		this.directoryManager = directoryManager;
 	}
 
 	@Override
 	public boolean execute(String args) {
-		System.out.println(dir.getCurrentDirectory());
+		System.out.println(directoryManager.getCurrentDirectory());
 		return true;
 	}
 }

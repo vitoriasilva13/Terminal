@@ -44,7 +44,7 @@ public class CommandHandler {
 	}
 
 	public boolean execute(String input) {
-        String[] parts = input.split(" ", 2); //@TODO checar depois por conta dos comandos com mais de um parâmetro
+        String[] parts = input.split(" ", 2);
         Command command = commandsMap.get(parts[0]);
 
         if (command != null) {

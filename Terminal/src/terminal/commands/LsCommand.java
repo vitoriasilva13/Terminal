@@ -4,15 +4,15 @@ import terminal.managers.DirectoryManager;
 
 public class LsCommand implements Command {
 
-	private DirectoryManager dir;
+	private DirectoryManager directoryManager;
 	
-	public LsCommand(DirectoryManager dir) {
-		this.dir = dir;
+	public LsCommand(DirectoryManager directoryManager) {
+		this.directoryManager = directoryManager;
 	}
 	
 	@Override
 	public boolean execute(String args) {
-		dir.showDirectories();
+		directoryManager.showDirectories();
 		return true;
 	}
 

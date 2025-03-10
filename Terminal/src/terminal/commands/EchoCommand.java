@@ -9,6 +9,7 @@ private FileManager fil;
 	public EchoCommand(FileManager fil) {
 		this.fil = fil;
 	}
+	
 	@Override
 	public boolean execute(String args) {
 		fil.echoToFile(args);

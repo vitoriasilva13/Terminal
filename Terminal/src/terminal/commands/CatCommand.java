@@ -4,14 +4,15 @@ import terminal.managers.FileManager;
 
 public class CatCommand implements Command {
 	
-	private FileManager fil;
+	private FileManager fileManager;
 	
-	public CatCommand(FileManager fil) {
-		this.fil = fil;
+	public CatCommand(FileManager fileManager) {
+		this.fileManager = fileManager;
 	}
+	
 	@Override
 	public boolean execute(String args) {
-		fil.printFileContent(args);
+		fileManager.printFileContent(args);
 		return true;
 	}
 

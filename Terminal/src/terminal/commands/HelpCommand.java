@@ -14,6 +14,7 @@ public class HelpCommand implements Command {
         System.out.println("cat <arquivo>          - Exibe o conteúdo de um arquivo.");
         System.out.println("echo <txt> > <arquivo> - Escreve texto em um arquivo.");
         System.out.println("history                - Mostra o histórico de comandos digitados.");
+        System.out.println("history clear          - Limpa histórico de comandos");
         System.out.println("help                   - Exibe esta mensagem de ajuda.");
         System.out.println("exit                   - Encerra o terminal.");
         return true;

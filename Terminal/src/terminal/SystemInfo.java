@@ -4,6 +4,7 @@ import java.net.InetAddress;
 import java.net.UnknownHostException;
 
 public class SystemInfo {
+	
 	private String userName;
 	private String pcName;
 	

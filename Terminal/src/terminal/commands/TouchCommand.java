@@ -4,15 +4,15 @@ import terminal.managers.FileManager;
 
 public class TouchCommand implements Command {
 
-	private FileManager fil;
+	private FileManager fileManager;
 	
-	public TouchCommand(FileManager fil) {
-		this.fil = fil;
+	public TouchCommand(FileManager fileManager) {
+		this.fileManager = fileManager;
 	}
 	
 	@Override
 	public boolean execute(String args) {
-		fil.createNewFile(args);
+		fileManager.createNewFile(args);
 		return true;
 	}
 

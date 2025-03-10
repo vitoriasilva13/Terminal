@@ -4,15 +4,15 @@ import terminal.managers.FileManager;
 
 public class RmCommand implements Command {
 	
-	private FileManager fil;
+	private FileManager fileManager;
 	
-	public RmCommand(FileManager fil) {
-		this.fil = fil;
+	public RmCommand(FileManager fileManager) {
+		this.fileManager = fileManager;
 	}
 	
 	@Override
 	public boolean execute(String args) {
-		fil.deleteDirectory(args);
+		fileManager.deleteDirectory(args);
 		return true;
 	}
 }

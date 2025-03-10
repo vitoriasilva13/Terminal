@@ -4,15 +4,15 @@ import terminal.managers.DirectoryManager;
 
 public class CdCommand implements Command {
 	
-	private DirectoryManager dir;
+	private DirectoryManager directoryManager;
 	
-	public CdCommand(DirectoryManager dir) {
-		this.dir = dir;
+	public CdCommand(DirectoryManager directoryManager) {
+		this.directoryManager = directoryManager;
 	}
 
 	@Override
 	public boolean execute(String args) {
-		dir.changeDirectory(args);
+		directoryManager.changeDirectory(args);
 		return true;
 	}
 
