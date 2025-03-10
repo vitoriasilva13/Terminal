@@ -7,14 +7,14 @@ Este projeto é um simulador de terminal Linux, desenvolvido em Java, que permit
 - [:octocat: Ana Luiza](https://github.com/nalusantana)
 - [:octocat: Vitória Silva](https://github.com/vitoriasilva13)
 
-## 🚀 Como Executar
+## 🚀 Instruções de Uso
 
 1. Execute o programa pelo arquivo principal `Terminal.java`.
-2. Escreva um dos comandos que estejam na lista na seção abaixo (Uso dos Comandos) no terminal e pressione Enter.
+2. Escreva um dos comandos que estejam na lista na seção abaixo (Comandos) no terminal e pressione Enter.
 3. Repita o passo 2 o quanto desejar.
 4. Para sair do terminal, use o comando `exit`.
 
-## 📖 Uso dos Comandos
+## 📖 Comandos
 | Comando                 | Descrição |
 |-------------------------|-------------|
 | `pwd`                  | Exibe o diretório atual |
