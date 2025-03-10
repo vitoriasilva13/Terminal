@@ -62,3 +62,7 @@ u@p:~/diretorioatual$ history clear
 ```sh
 u@p:~/diretorioatual$ exit
 ```
+
+👨‍💻 Desenvolvedores
+- [Ana Luiza](https://github.com/nalusantana)
+- [Vitória Silva](https://github.com/vitoriasilva13)
